@@ -1,0 +1,22 @@
+{
+  "name": "cypress-auto-framework-cucumber10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runwithdashboard": "npx cypress run --record --key d16134c6-9ea5-4f33-a32e-8c77e3e314e3",
+    "triggerAllTests-dashboard": "npx cypress run --spec cypress/e2e/features/SearchInDetailResultArea.feature --record --key d16134c6-9ea5-4f33-a32e-8c77e3e314e3"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.10.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions"
+  }
+}
